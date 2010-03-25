@@ -14,6 +14,7 @@ public class RangeTest {
 		assertThat(Range.range(0, 5, 1).toList(),is(list(0,1,2,3,4,5)));
 		assertThat(Range.range(0, -5, -1).toList(),is(list(0,-1,-2,-3,-4,-5)));
 		assertThat(Range.range(0, 6, 2).toList(),is(list(0,2,4,6)));
+		assertThat(Range.range(0, 5, 2).toList(),is(list(0,2,4)));
 	}
 
 	private List<Integer> list(Integer... args) {
